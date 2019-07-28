@@ -3,28 +3,46 @@
     <head>
         <meta charset="utf-8">
         <title>home</title>
+        <script src = "../js/prefixfree.min.js"></script>
 
         <style>
-        
+        *{
+            margin : 0px;
+            padding : 0px;
+         }
+
+        a {text-decoration:none}
+
         body{
-            background : #F4F5F0;
+            background : url(img/bg3.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
         }
 
         #menubox{
-            background : #EDC9AF;
-            width : 100%;
-            height : 120px;
+            background : #50c878;
+            width : 100% auto;
+            height : 30px;
             margin : 0px;
-            padding : 40px;
+            padding : 45px;
         }
 
         #menubox ul li{
+            text-align: center;
             display : inline;
             margin : 60px;
             font-size : 30px;
-            font-family :  
+            font-family :
         }
-        
+
+        p{
+           font-size : 1.5em;
+           color : white;
+           font-style: italic;
+           text-align: right;
+        }
+
         </style>
 
     </head>
@@ -33,14 +51,17 @@
 
         <div id = "menubox">
             <ul>
-                <li><a href = "#">home</a></li>
-                <li><a href = "profile.html">profile</a></li>
-                <li><a href = "examples.html">examples</a></li>
-                <li><a href = "form.html">form</a></li>
+                <li><a href = "#" style = "color : white">home</a></li>
+                <li><a href = "profile.html" style = "color : white">profile</a></li>
+                <li><a href = "examples.html" style = "color : white">examples</a></li>
+                <li><a href = "form.html" style = "color : white">form</a></li>
             </ul>
-
-
         </div>
+
+        <p>
+          DAVID HOCKNEY<br>
+          BIG SPLASH
+        </p>
 
     </body>
 </html>
