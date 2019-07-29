@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>포지셔닝 - absolute 예제</title>
+
+        <style>
+            body{
+                margin: 0px;
+                white-space: pre-wrap;
+            }
+
+            #wrap {
+                position: relative;
+                width: 300px;
+                height: 300px;
+                border: 1px solid black;
+
+            }
+
+            .box{
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                background: darkcyan;
+            }
+
+            #crd1{
+                top: 0;
+                left: 0;
+            }
+            #crd2{
+                top: 0;
+                right: 0;
+            }
+            #crd3{
+                bottom: 0;
+                left: 0;
+            }
+            #crd4{
+                bottom: 0;
+                right: 0;
+            }
+            #crd5{
+                top: 100px;
+                left: 100px;
+            }
+
+            #fx{
+                position: fixed;
+                top: 5px;
+                right: 5px;
+                width: 50px;
+                height: 50px;
+                background: lightgray;
+            }
+            /*
+            .invisible{
+
+                visibility: hidden;
+            }
+            
+            .invisible:hover{
+
+                visibility: visible;
+            }
+            */
+
+            #img_visible{
+                position: relative;
+            }
+
+            #b1{
+                z-index: 1
+            }
+
+            #b1{
+                z-index: 3
+            }
+
+            #b1{
+                z-index: 2
+            }
+
+        </style>
+
+
+    </head>
+    <body>
+        <div id = "wrap">
+            <div class = "box" id = "crd1"></div>
+            <div class = "box" id = "crd2"></div>
+            <div class = "box" id = "crd3"></div>
+            <div class = "box" id = "crd4"></div>
+            <div class = "box" id = "crd5"></div>
+        </div>
+
+        <div id = "fx">
+            <div id = "img_visible">
+            <div class="box" id = "b1"><img src = "../img/pic1.jpg")></div>
+            <div class="box" id = "b1"><img src = "../img/pic2.jpg" class = "invisible"></div>
+            <div class="box" id = "b1"><img src = "../img/pic3.jpg"></div>
+            </div>
+        </div>
+    </body>
+</html>
