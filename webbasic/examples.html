@@ -14,15 +14,16 @@
         a {text-decoration:none}
 
         body{
-            background : #ffffff;
+            background: #a1f2b9;
         }
 
         #menubox{
-          background : #50c878;
+          background : rgb(70, 206, 188);
           width : 100% auto;
           height : 30px;
           margin : 0px;
           padding : 45px;
+          z-index: 10;
         }
 
         #menubox ul li{
@@ -30,33 +31,38 @@
             display : inline;
             margin : 60px;
             font-size : 30px;
-            font-family :
         }
 
-        #floating {
-	         position: absolute;
-	         width: 200px;
-	         height: 1000px;
-	         left: 0px;
-	         top: 120px;
-           text-align : center;
-           font-size : 30px;
-           margin : 0px;
-	         background-color: #ffffff;
-	         color: cadetblue;
-           white-space : nomal;
-           word-spacing : 0.5em;
-           line-height: 200%
-           }
+        #con{
+            position: fixed;
+            top: 0px;
+            height : 100%;
+        }
 
-          #block{
-          background: rgba(95, 160, 160, 0.096);
-          width : 780px;
-          height: 1000px;
-          margin : 50px 400px 100px 250px;
+        #con1 {
+            position: fixed;            
+            float: left;
+            width: 250px;
+            height: 100%;
+            top: 120px;
+            left:0px;
+          	background: rgb(255, 255, 255, 0.5);
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            font-style: italic;
+            }
 
-          }
+         #con2 {
+            position: absolute; 
+            top: 120px;
+            left: 200px;
+            float: left;
+            height: 100%;
+            width: 7000px;
 
+            }
+		
         </style>
 
     </head>
@@ -71,27 +77,31 @@
                 <li><a href = "form.html" style = "color : white">form</a></li>
             </ul>
         </div>
-
-        <div id = "floating">
-            <a href = "grid.html" style = "color : black">01</a><br>
-            <a href = "day02.html" style = "color : black">02</a><br>
-            <a href = "day03.html" style = "color : black">03</a><br>
-            <a href = "day04.html" style = "color : black">04</a><br>
-            <a href = "day05.html" style = "color : black">05</a><br>
-            <a href = "day06.html" style = "color : black">06</a><br>
-            <a href = "day07.html" style = "color : black">07</a><br>
-            <a href = "day08.html" style = "color : black">08</a><br>
-            <a href = "day09.html" style = "color : black">09</a><br>
-            <a href = "day10.html" style = "color : black">10</a><br>
-            <a href = "day11.html" style = "color : black">11</a><br>
-            <a href = "day12.html" style = "color : black">12</a><br>
-            <a href = "day13.html" style = "color : black">13</a><br>
-            <a href = "day14.html" style = "color : black">14</a><br>
-            <a href = "day15.html" style = "color : black">15</a><br>
+	<div id = "con">
+        <div id = "con1">
+        	<br>
+        	<hr style="border: solid 1px white;">
+            <a href = "grid.html" style = "color : black">DAY01</a><br>
+            <a href = "day02.html" style = "color : black">DAY02</a><br>
+            <a href = "day03.html" style = "color : black">DAY03</a><br>
+            <a href = "day04.html" style = "color : black">DAY04</a><br>
+            <a href = "day05.html" style = "color : black">DAY05</a><br>
+            <a href = "day06.html" style = "color : black">DAY06</a><br>
+            <a href = "day07.html" style = "color : black">DAY07</a><br>
+            <a href = "day08.html" style = "color : black">DAY08</a><br>
+            <a href = "day09.html" style = "color : black">DAY09</a><br>
+            <a href = "day10.html" style = "color : black">DAY10</a><br>
+            <a href = "day11.html" style = "color : black">DAY11</a><br>
+            <a href = "day12.html" style = "color : black">DAY12</a><br>
+            <a href = "day13.html" style = "color : black">DAY13</a><br>
+            <a href = "day14.html" style = "color : black">DAY14</a><br>
+            <a href = "day15.html" style = "color : black">DAY15</a><br>
+            <hr style="border: solid 1px white;">
         </div>
+	
+        <div id = "con2">
 
-        <div id = block>
-
+        </div>
         </div>
 
     </body>
