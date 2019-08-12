@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var site = prompt("당신이 가고 싶은 사이트 입력(구글, 다음, 네이버) : ", "");
+
+        switch(site){
+            case "구글" : 
+                url = "https://www.google.com";
+                break;
+            case "다음" :
+                url = "https://www.daum.net";
+                break;
+            case "네이버" :
+                url = "https://www.naver.com";
+                break;
+            default :
+                alert("구글, 다음, 네이버 중 하나를 입력하세요");
+                location.reload();
+                break;
+        }
+        if(url) location.href = url;
+    </script>
+</body>
+</html>
