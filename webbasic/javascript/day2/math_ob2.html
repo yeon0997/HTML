@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var tryNum = 7;
+    var x = 1;
+    var flag = false;
+
+    while(x <= tryNum){
+    var game = prompt("가위 바위 보 중에 선택해주세요", "");
+   
+    var gameNum;
+    
+    switch(game){
+        case "가위" :
+            gameNum = 1; break;
+        case "바위" :
+            gameNum = 2; break;
+        case "보" :
+            gameNum = 3; break;
+        default :
+            alert("입력오류");
+            location.reload();
+
+    }
+    
+    var com = Math.ceil(Math.random()*3);
+    document.write("<img src = \"imges/math_img_" + com + ".jpg\">");
+
+    var result = gameNum - com;
+    if(result == -2 || result == 1){
+        document.write("<img src = \"images/game_1.jpg\">");
+        flag = true;
+        break;
+    }
+    else{
+        document.write("<img src = \"images/game_2.jpg\">");
+        x++;
+    }
+}
+if(flag == true){
+    document.write("<p></p>")
+}
+</script>
+</body>
+</html>
