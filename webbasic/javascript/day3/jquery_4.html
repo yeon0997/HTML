@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery</title>
+    <script src = "js/jquery.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <script>
+        $(function(){
+           var obj = [
+            {"area" : "서울"},
+           {"area" : "부산"},
+           {"area" : "전주"}
+        ];
+
+           $(obj).each(function(i, o) {
+                console.log(i + " : ", o);
+           });
+           console.log("============================ the end1");
+
+           $.each($("#menu2 li"), function(i, o){
+            console.log(i + " : ", o);
+           });
+           console.log("============================ the end2");
+
+           $.each($("#menu2 li"), function(i){
+               console.log(i + " : ", $(this));
+           });
+
+        });
+    </script>
+</head>
+<body>
+    <h1>탐색선택자</h1>
+   <ul id = "menu1">
+       <li>메뉴1</li>
+       <li>메뉴2</li>
+       <li>메뉴3</li>
+       <li>메뉴4</li>
+    </ul>
+
+    <ul id = "menu2">
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+    </ul>
+</body>
+</html>
