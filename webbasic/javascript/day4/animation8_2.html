@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .txt1{
+        background-color: antiquewhite;
+    }
+    .txt2{
+        background-color: rgb(128, 99, 61);
+    }
+    .txt3{
+        background-color: rgb(118, 207, 138);
+    }
+    .txt4{
+        background-color: rgb(91, 121, 116);
+    }
+    .txt5{
+        background-color: rgb(214, 151, 175);
+    }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $(".txt1").animate({marginLeft:"300px"}, 1000);
+            $(".txt2").delay(3000).animate({marginLeft:"300px"}, 1000);
+            $(".btn1").on("click", moveElement);
+
+            function moveElement(){
+                $(".txt3").animate({marginLeft :"300px"})
+            }
+        });
+    </script>
+</head>
+<body>
+    <p class = "txt1">효과1</p>
+    <p class = "txt2">효과2<br>delay(3000)</p>
+    <p><button class="btn1">버튼1</button></p>
+    <p class = "txt3">효과3</p>
+    <p class = "txt4">효과4</p>
+    <p class = "txt5">효과5</p>
+</body>
+</html>
