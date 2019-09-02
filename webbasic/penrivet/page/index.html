@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> 펜리 홈페이지에 오신 것을 환영합니다. </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='nav.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.slider').bxSlider({
+                auto: true,
+                autoControls: false,
+                stopAutoOnClick: true,
+                controls: true,
+                autoHover: true, //호버시 슬라이드 멈춤
+                pause: 3000 //슬라이드시간
+            });
+        });
+    </script>
+
+
+
+</head>
+
+<style>
+    A:link {
+        color: gray;
+        text-decoration: none;
+    }
+    /* 아직 방문하지 않은경우 */
+    
+    A:visited {
+        font-weight: bold;
+        color: gray;
+        text-decoration: none;
+    }
+    /* 한번 이상 방문한 링크 처리 */
+    
+    A:active {
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+    /* 마우스로 클릭하는 순간 */
+    
+    A:hover {
+        font-weight: bold;
+        color: #28ada7;
+        text-decoration: none;
+    }
+    /* 마우스 링크 위 올려 놓았을때 */
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+        /* 맨위에 메뉴에 공백없이*/
+    }
+    
+    A:link {
+        color: gray;
+        text-decoration: none;
+    }
+    /* 아직 방문하지 않은경우 */
+    
+    A:visited {
+        font-weight: bold;
+        color: gray;
+        text-decoration: none;
+    }
+    /* 한번 이상 방문한 링크 처리 */
+    
+    A:active {
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+    /* 마우스로 클릭하는 순간 */
+    
+    A:hover {
+        font-weight: bold;
+        color: #28ada7;
+        text-decoration: none;
+    }
+    /* 마우스 링크 위 올려 놓았을때 */
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+        /* 맨위에 메뉴에 공백없이*/
+    }
+    /* content2 hover */
+    
+    con2-h3-a:link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .body {
+        background: snone;
+        font-family: "나눔고딕", "NANUMGOTHIC.TTF";
+        background-repeat: repeat-x;
+        background-attachment: fixed;
+        /*아주 많이 참고하기 */
+    }
+    
+    .navigation {
+        margin-top: 30px;
+        width: 100%;
+        height: 150px;
+        background-color: none;
+    }
+    
+    .logo {
+        float: left;
+        width: 30%;
+        height: 90%;
+        margin-top: 30px;
+        margin-left: 10px;
+        background-color: none;
+    }
+    
+    .title {
+        float: right;
+        width: 60%;
+        height: 90%;
+        background-color: white;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 80px 0px;
+        overflow: hidden;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li.dropdown {
+        display: inline-block;
+        margin-left: 90px;
+    }
+    
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #28ada7;
+        min-width: 140px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 10;
+    }
+    
+    .dropdown-menu a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-menu a:hover {
+        background-color: #9fd4d1;
+    }
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    
+    .content1 {
+        background-color: none;
+        width: 100%;
+        height: 600px;
+    }
+    
+    .content2 {
+        padding: 10px;
+        background-color: powderblue;
+        width: 100%;
+        height: 600px;
+    }
+
+
+    
+    .con2-h4 {
+        margin-top: 100px;
+        text-align: center;
+    }
+    
+    .con2-map {
+        padding: 20px;
+        margin-left: 25px;
+    }
+    
+    .content3 {
+        display: inline;
+        position: static;
+        background-color: none;
+        width: 100%;
+        height: 600px;
+    }
+    
+    .con3-2 {
+        width: 300px;
+        height: 250px;
+        background-color: white;
+        margin-left: 44%;
+        margin-top: 5%;
+    }
+    
+    .con3-3 {
+        width: 300px;
+        height: 250px;
+        background-color: white;
+        margin-left: 44%;
+    }
+    
+    .footer {
+        background-color: slategray;
+        width: 100%;
+        height: 250px;
+    }
+    /* div bx slider*/
+    
+    .slider {
+        width: 100%;
+        height: 600px;
+    }
+    
+    .back {
+        position: relative;
+    }
+    
+    .in {
+        position: absolute;
+        bottom: 50px;
+        right: 0px;
+    }
+    /* content1 h over */
+    
+    .slider-img-hover .sliderimg {
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        -webkit-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        transition: all 300ms ease;
+    }
+    
+    .slider-img-hover .slidertext {
+        position: relative;
+        margin-left: 65%;
+        height: 500px;
+        background: rgba(119, 119, 119, 0.644);
+        color: #fff;
+        z-index: 100;
+        padding: 15px;
+        -webkit-transition: all 200ms linear;
+        -moz-transition: all 200ms linear;
+        -o-transition: all 00ms linear;
+        transition: all 200ms linear;
+    }
+    
+    .prod-list {
+        
+        list-style: none;
+        margin-left: 17%;
+        padding: 0;
+    }
+    
+    .prod-list li {
+        position: relative;
+        float: left;
+        padding: 0;
+        margin: 5%;
+        overflow: hidden;
+    }
+    
+    .prod-list img {
+        margin: 0;
+        padding: 0;
+        float: left;
+        z-index: 5;
+    }
+    
+    .prod-list .caption {
+        position: absolute;
+        opacity: 0;
+        padding: 80px;
+        width: 100px;
+        height: 100px;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        z-index: 100;
+    }
+    
+    .prod-list li:hover .caption {
+        opacity: 1;
+    }
+    
+    .prod-list .caption h1,
+    .prod-list .caption p {
+        color: #fff;
+        text-align: center;
+    }
+    
+    .con2-p {
+        font-display: center;
+        color: #4a4a4a;
+        font-size: large;
+        letter-spacing: 0.5em;
+    }
+    
+    div#time #timetable,
+    #reservation {
+        font-size: 20px;
+        text-align: center;
+        border: 0px;
+        width: 1000px;
+        height: 300px;
+    }
+    
+    div#time #timetable th,
+    #timetable td {
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+    }
+    
+    .footer-logo {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    
+    .footer-text {
+        color: aliceblue;
+        font-size: 10px;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    
+    .con2-li-div {
+        margin-left: 30px;
+        text-align: center;
+    }
+    
+    li {
+        text-align: center;
+    }
+    
+    .wpb_map_wraper {
+        margin-left: 65px;
+        padding: 20px;
+    }
+</style>
+</style>
+
+<body>
+    <div class="navigation">
+        <div class="logo">
+            <a href="../page/index.html"> <img src="../img/logo.png" width="50%"></a>
+        </div>
+        <div class="title">
+            <ul id="menu-main" class="dropdown-menu-main">
+                <li class="dropdown">
+                    <a href="nav_doctor.html" class="onmouse">병원소개</a>
+                    <div class="dropdown-menu">
+                        <a href="nav_doctor.html">의료진</a>
+                        <a href="nav_come.html">오시는길</a>
+                        <a href="nav_time.html">진료시간</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="ntc_notice.html" class="onmouse">공지사항</a>
+                    <div class="dropdown-menu">
+                        <a href="ntc_notice.html">공지사항</a>
+                        <a href="ntc_news.html">새소식</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="ani-dog.html" class="onmouse">진료동물</a>
+                    <div class="dropdown-menu">
+                        <a href="ani-dog.html">진료동물</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="ask-qna.html" class="onmouse">문의</a>
+                    <div class="dropdown-menu">
+                        <a href="ask-qna.html">1:1문의</a>
+                        <a href="ask-asklist.html">자주묻는질문</a>
+                        <a href="ask-reservation.html">예약안내</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content1">
+        <div class="slider">
+            <div class="slider-img-hover"><img src="../img/bg_slide_01.jpg" class="sliderimg">
+                <div class="slidertext">
+                    <p class="slider-title">
+                        <h2>의료진소개</h2>
+                    </p><br>
+                    <p class="slider-text">
+                        <h4>차재관 원장 <br><br></h4>
+                        <p><b>＋ 학력 </b><br>
+                            <p>수의학박사 수료 (전북대학교대학원 수의외과학 전공) <br> 전북대학교 수의과대학 수의학과 수의외과학 석사 <br> 전북대학교 수의과대학 수의학과 졸업
+                                <br><br>
+                                <p>＋ 주요논문<br>
+                                    <p> Cha, J. G., Lee, H. B., Cheong, H. Y., Heo, S. Y., & Ragetly, G. R. (2016).<br> Evaluation of a Veress needle for the fluid egress system of stifle arthroscopy in toy dog breeds. Veterinary and Comparative Orthopaedics
+                                        and Traumatology (VCOT), 29(2), 149-155.
+                                        <p>Cheong, H. Y., Kim, J. H., Cha, J. G., Seol, J. W., Kim, M. S., & Lee, H. B. (2014). Stabilization of Short Juxta-articular Fractures Using a Circular External Skeletal Fixator System in Dogs. J Vet Clin, 31(6),
+                                            523-526.
+                                        </p>
+                                    </p>
+                </div>
+            </div>
+            <div class="slider-img-hover"><img src="../img/bg_slide_02.jpg" class="sliderimg">
+                <div class="slidertext">
+                    <p class="slider-title">
+                        <h2>시설안내</h2>
+                    </p><br>
+                    <p class="slider-text">
+                        <h4 class="con2-h4">
+                            <br>"<br> 사랑하는 반려동물과 보호자가 편하게 휴식할 수 있는 공간<br> 최첨단 의료기기로 안심할 있는 병원<br>국내 최고의 의료진과 함께하는 신뢰할 수 있는 병원
+                            <Br>"
+
+                        </h4>
+                    </p>
+                </div>
+            </div>
+            <div class="slider-img-hover"><img src="../img/bg_slide_03 copy.jpg" class="sliderimg">
+                <div class="slidertext">
+
+                    <p class="slider-title">
+                        <h2>오시는길</h2>
+                    </p><br>
+                    <p class="slider-text">
+                        경기도 수원시 영통구 센트럴타운로 107,<br> 광교푸르지오 월드마크 월드스퀘어 2층
+                        <div class="con2-map">
+                            <table cellpadding="0" cellspacing="0" width="462">
+                                <tr>
+                                    <td style="border:1px solid #cecece;">
+                                        <a href="https://map.naver.com/?query=7Jik7JWE7Iuc7Iqk7KCV7ZiV7Jm46rO87Iug6rK97Jm46rO864%2BZ66y867OR7JuQ&searchCoord=&menu=location&tab=1&lng=20694dd54f63988e20ff0a6f083dd6c9&__fromRestorer=true&type=SITE_1&mapMode=0&mpx=86d005840ba0150f808d7c75d56259dc2a2053e23120aa8e8f1cfe035a449f3c8cdeb6ec24feef3ee1a4329ecc0b20ed&lat=c307c6af836e28583b669a1682ebd84c&dlevel=12&enc=b64"
+                                            target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1567342684561_-1301852050" width="460" height="340" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;" /></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td height="30" bgcolor="#f9f9f9" align="left" style="padding-left:9px; border-left:1px solid #cecece; border-bottom:1px solid #cecece;"> <span style="font-family: tahoma; font-size: 11px; color:#666;">2019.9.1</span>&nbsp;<span style="font-size: 11px; color:#e5e5e5;">|</span>&nbsp;<a style="font-family: dotum,sans-serif; font-size: 11px; color:#666; text-decoration: none; letter-spacing: -1px;"
+                                                        href="https://map.naver.com/?query=7Jik7JWE7Iuc7Iqk7KCV7ZiV7Jm46rO87Iug6rK97Jm46rO864%2BZ66y867OR7JuQ&searchCoord=&menu=location&tab=1&lng=20694dd54f63988e20ff0a6f083dd6c9&__fromRestorer=true&type=SITE_1&mapMode=0&mpx=86d005840ba0150f808d7c75d56259dc2a2053e23120aa8e8f1cfe035a449f3c8cdeb6ec24feef3ee1a4329ecc0b20ed&lat=c307c6af836e28583b669a1682ebd84c&dlevel=12&enc=b64"
+                                                        target="_blank">지도 크게 보기</a> </td>
+                                                <td width="98" bgcolor="#f9f9f9" align="right" style="text-align:right; padding-right:9px; border-right:1px solid #cecece; border-bottom:1px solid #cecece;"> <span style="float:right;"><span style="font-size:9px; font-family:Verdana, sans-serif; color:#444;">&copy;&nbsp;</span>&nbsp;<a style="font-family:tahoma; font-size:9px; font-weight:bold; color:#2db400; text-decoration:none;"
+                                                        href="https://www.navercorp.com" target="_blank">NAVER Corp.</a></span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                </div>
+                <h4></h4>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="content2">
+        <h1></h1>
+        <div id="container">
+            <ul class="prod-list">
+                <li>
+                    <div class="con2-li-div">
+                        <img src=" ../img/content2_p1.png " width="250px " height="250px ">
+                        <div class="caption ">
+                            <h3 class="con2-h3">
+                                <a href="./nav_doctor.html" class="con2-h3-a">
+                                바로가기</h3></a>
+                        </div>
+                        <p class="con2-p">의료진소개</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="../img/dog.png " width="250px " height="250px ">
+                    <div class="caption ">
+                        <h3 class="con2-h3">
+                            <a href="./ani-dog.html" class="con2-h3-a">
+                        바로가기</h3></a>
+                    </div>
+                    <p class="con2-p">진료동물</p>
+                </li>
+                <li>
+                    <img src="../img/qna.png" width="250px " height="250px ">
+                    <div class="caption">
+                        <h3 class="con2-h3">
+                            <a href="./ask-asklist.html" class="con2-h3-a">
+                                바로가기</h3></a>
+                    </div>
+                    <p class="con2-p">문의하기</p>
+                </li>
+            </ul>
+        </div>
+
+        </ul>
+    </div>
+
+    <div class="content3">
+        <div class="con3-2 ">
+            <h1 class="con3h1">　예약안내</h1>
+            <table id="timetable ">
+                <tr>
+                    <td>전화</td>
+                    <td>043-266-6666</td>
+                </tr>
+                <tr>
+                    <td>카카오톡</td>
+                    <td>ID : PENRYHOSPITAL</td>
+                </tr>
+                <tr>
+                    <td>인스타그램</td>
+                    <td>@penryhospital</td>
+                </tr>
+            </table>
+        </div>
+        <div class="con3-3 ">
+            <h1>　진료시간</h1>
+            <table id="timetable ">
+
+                <tr>
+                    <td>월요일-금요일</td>
+                    <td>09:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>토요일/공휴일</td>
+                    <td>09:00 - 13:00</td>
+                </tr>
+                <tr>
+                    <td>일요일</td>
+                    <td>휴 무</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer ">
+        <div class="footer-logo "><img src="../img/logo.png " width="20% "> </div>
+        <div class="footer-text ">
+            주소. 경기도 수원시 영통구 센트럴타운로 107,<br> 광교푸르지오 월드마크 월드스퀘어 2층 <br> TEL . 031-215-7474 / 사업자등록번호 274-22-00393 / 대표 : 차재관, 정혜련
+            <br> Copyright © 2019 Penry Animal Hospital All Rights Reserved. design by J&Y
+        </div>
+
+</body>
+
+</html>
